@@ -12,14 +12,51 @@
     <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
     <!-- normalize css -->
     <link rel="stylesheet" href="./libs/normalize.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+    <!-- header start-->
+    <header class="header">
+        <div class="container d-flex align-items-center">
+            <a class="header__logo"href="#!">LOGOS</a>
+            <div class="header__content d-flex align-items-center" >
+                <div class="header__search-box position-relative">
+                    <img class="header__location-icon position-absolute" src="./images/icons/location.svg" alt="location-icon">
+                    <input class="header__search-input" type="search" name="search" placeholder="Введите адрес доставки">
+                    <img class="header__search-icon position-absolute" src="./images/icons/search.svg" alt="search-icon">
+                </div>
+
+                <div class="header__contact-box d-flex align-items-center">
+                    <div class="phone-bg">
+                        <img src="./images/icons/calling.svg" alt="calling icon">
+                    </div>
+                    <div class="header__cantact-number">
+                        <span>Контакты:</span>
+                        <a href="tel:+7(917)510-57-59">+7 (917) 510-57-59</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__cart-btn ms-auto">
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Корзина
+                    <span class="product__value">4</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- main start -->
+    <main>
+
+    </main>
+
+    <!-- footer start -->
+    <footer class="footer">
+
+    </footer>
   
     
-
-
-
-
     
     <!-- Bootstrap js -->
     <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
