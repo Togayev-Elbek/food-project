@@ -240,4 +240,29 @@ body {
   transform: rotate(-8.368deg);
   margin-top: 33px;
   text-shadow: -7px 4px 0px rgba(255, 255, 255, 0.25);
+}
+
+.tabs {
+  padding: 29px 13px;
+}
+.tabs .nav {
+  gap: 55px;
+}
+.tabs .nav-tabs {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.tabs .nav-item {
+  padding-bottom: 29px;
+}
+.tabs .nav-item:hover {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 27px;
+  border-bottom: 2px solid #618967;
+}
+.tabs .nav-linkk {
+  color: #cfcfcf;
+  font-size: 18px;
+  padding: 0;
 }/*# sourceMappingURL=main.css.map */

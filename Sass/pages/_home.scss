@@ -1,3 +1,6 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
 .intro {
 	background-image: url(../../images/bg-imgs/intro-bg.png);
 	background-repeat: no-repeat;
@@ -18,5 +21,38 @@
 			margin-top: 33px;
 			text-shadow: -7px 4px 0px rgba(255, 255, 255, 0.25);
 		}
+	}
+}
+
+// tabs
+
+.tabs {
+	padding: 29px 13px;
+
+	.nav {
+		gap: 55px;
+	}
+
+	.nav-tabs {
+		border-bottom: 1px solid rgb(255, 255, 255, 0.10);
+		;
+	}
+
+	.nav-item {
+		padding-bottom: 29px;
+
+		&:hover {
+			color: variables.$white;
+			font-size: 18px;
+			font-weight: 500;
+			padding-bottom: 27px;
+			border-bottom: 2px solid variables.$dark-green;
+		}
+	}
+
+	.nav-linkk {
+		color: #cfcfcf;
+		font-size: 18px;
+		padding: 0;
 	}
 }
