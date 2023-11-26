@@ -166,9 +166,11 @@ body {
 }
 .header__search::-moz-placeholder {
   color: #CFCFCF;
+  width: 100%;
 }
 .header__search::placeholder {
   color: #CFCFCF;
+  width: 100%;
 }
 .header__location-icon {
   top: 50%;
