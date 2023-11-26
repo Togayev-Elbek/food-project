@@ -1,0 +1,37 @@
+@use "../abstracts/variables";
+
+body {
+	font-family: 'Gilroy', sans-serif;
+	font-weight: 400;
+	background-color: variables.$black;
+}
+
+.modal-content {
+	flex-direction: column;
+	border-radius: 10px;
+	background: variables.$modal-content;
+	position: relative;
+
+	.close__icon {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+
+		&:hover {
+			transition: all 0.5s;
+			transform: translate(-50%);
+		}
+	}
+
+	.img {
+		width: 76px;
+		margin: 32px auto 14px auto;
+	}
+
+	.modal__info {
+		color: variables.$white;
+		font-size: 30px;
+		font-weight: 700;
+		margin: 0 auto;
+	}
+}

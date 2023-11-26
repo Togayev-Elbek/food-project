@@ -1,0 +1,62 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+
+.btn {
+    color: variables.$white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 14px 13px 14px 24px;
+    background: variables.$btn-gradient;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+
+    .product__value {
+        border-radius: 50%;
+        padding: 3px 8px;
+        display: inline-block;
+        background-color: variables.$white;
+        color: variables.$black;
+        font-size: 12px;
+        font-weight: 600;
+        margin-left: 32px;
+        position: relative;
+
+        &::before {
+            content: "";
+            @include mixins.center($position: absolute, $top: 50%, $left: -12px);
+            width: 1px;
+            height: 38px;
+            background: rgba(255, 255, 255, 0.30);
+        }
+    }
+
+    &:hover {
+        color: variables.$white;
+        background: linear-gradient(115deg, #72A479 5.11%, #618967 94%);
+    }
+
+    &:focus {
+        box-shadow: none;
+
+    }
+
+}
+
+.modal__btn {
+    border-radius: 10px;
+    background: variables.$modal-btn;
+    width: 188px;
+    margin: 43px auto 63px auto;
+    padding: 17px 0;
+
+    .btn__title {
+        color: variables.$white;
+        font-family: 'Gilroy';
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+    }
+}
