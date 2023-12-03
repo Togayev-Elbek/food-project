@@ -6,7 +6,7 @@
     color: variables.$white;
     font-size: 14px;
     font-weight: 600;
-    padding: 14px 13px 14px 24px;
+    padding: 14px 14px 14px 24px;
     background: variables.$btn-gradient;
     border: none;
     border-radius: 10px;
@@ -48,9 +48,8 @@
 .modal__btn {
     border-radius: 10px;
     background: variables.$modal-btn;
-    width: 188px;
     margin: 43px auto 63px auto;
-    padding: 17px 0;
+    padding: 17px 34px;
 
     .btn__title {
         color: variables.$white;

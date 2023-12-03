@@ -27,7 +27,7 @@
 // tabs
 
 .tabs {
-	padding: 29px 13px;
+	padding: 29px 13px 0 13px;
 
 	.nav {
 		gap: 55px;
@@ -43,8 +43,8 @@
 
 		&:hover {
 			color: variables.$white;
-			font-size: 18px;
-			font-weight: 500;
+			font-size: 20px;
+			font-weight: 600;
 			padding-bottom: 27px;
 			border-bottom: 2px solid variables.$dark-green;
 		}

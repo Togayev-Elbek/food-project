@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./fonts/zing-rust-demo/stylesheet.css">
     <!-- Bootstrap  css -->
     <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+    <!-- Swiper slider -->
+    <link rel="stylesheet" href="./libs/swiper/swiper.min.css">
     <!-- normalize css -->
     <link rel="stylesheet" href="./libs/normalize.css">
     <!-- custom css -->
@@ -92,18 +94,88 @@
         <!-- Cold snacks -->
         <section class="cold__snacks">
             <h2 class="snacks__title">ХОЛОДНЫЕ ЗАКУСКИ</h2>
-            <section class="slider">
+            <section class="slider position-relative">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper d-flex align-items-center">
                         <div class="swiper-slide">
                             <img src="./images/icons/menu__img-one.svg" alt="menu__img-one">
                             <div class="slider__content">
-                                <div class="content__top d-flex align-items-center">
+                                <div class="content__top d-flex align-items-center justify-content-between">
                                     <h5 class="content__top-title">Ягненок</h5>
                                     <p class="product__weight">Вес: 225 г</p>
                                 </div>
+                                <p class="content__text">Фаршированный гречневой кашей, <br> курагой, апельсином и зеленым яблоком</p>
+                                <div class="content__bottom d-flex align-items-center justify-content-between">
+                                    <h6 class="product__price">620 ₽</h6>
+                                    <button class="btn" data-bs-toggle="modal" data-bs-target="#cardModal">
+                                        В корзину
+                                        <img src="./images/icons/card-icon.svg" alt="card-icon">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/imgs/menu__img-two.png" alt="menu__img-one">
+                            <div class="slider__content">
+                                <div class="content__top d-flex align-items-center justify-content-between">
+                                    <h5 class="content__top-title">Индейка</h5>
+                                    <p class="product__weight">Вес: 225 г</p>
+                                </div>
                                 <p class="content__text">Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком</p>
-                                <div class="content__bottom d-flex align-items-center">
+                                <div class="content__bottom d-flex align-items-center justify-content-around">
+                                    <button class="btn" data-bs-toggle="modal" data-bs-target="#cardModal">
+                                        <img class="plus__icon" src="./images/icons/plus__icon.png" alt="plus__icon">
+                                    </button>
+                                    <h6 class="product__price">450 ₽</h6>
+                                    <button class="btn" data-bs-toggle="modal" data-bs-target="#cardModal">
+                                        <img class="plus__icon" src="./images/icons/plus__icon.png" alt="plus__icon">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/imgs/menu__img-three.png" alt="menu__img-one">
+                            <div class="slider__content">
+                                <div class="content__top d-flex align-items-center justify-content-between">
+                                    <h5 class="content__top-title">Гусь</h5>
+                                    <p class="product__weight">Вес: 225 г</p>
+                                </div>
+                                <p class="content__text text">Фаршированный яблоками</p>
+                                <div class="content__bottom d-flex align-items-center justify-content-between">
+                                    <h6 class="product__price">7 900 ₽</h6>
+                                    <button class="btn" data-bs-toggle="modal" data-bs-target="#cardModal">
+                                        В корзину
+                                        <img src="./images/icons/card-icon.svg" alt="card-icon">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/imgs/menu__img-four.png" alt="menu__img-one">
+                            <div class="slider__content">
+                                <div class="content__top d-flex align-items-center justify-content-between">
+                                    <h5 class="content__top-title">Утка</h5>
+                                    <p class="product__weight">Вес: 225 г</p>
+                                </div>
+                                <p class="content__text text">Фаршированная рисом, курагой и айвой</p>
+                                <div class="content__bottom d-flex align-items-center justify-content-between">
+                                    <h6 class="product__price">3 230 ₽</h6>
+                                    <button class="btn" data-bs-toggle="modal" data-bs-target="#cardModal">
+                                        В корзину
+                                        <img src="./images/icons/card-icon.svg" alt="card-icon">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/imgs/menu__img-four.png" alt="menu__img-one">
+                            <div class="slider__content">
+                                <div class="content__top d-flex align-items-center justify-content-between justify-content-between">
+                                    <h5 class="content__top-title">Ягненок</h5>
+                                    <p class="product__weight">Вес: 225 г</p>
+                                </div>
+                                <p class="content__text">Фаршированный гречневой кашей, <br> курагой, апельсином и зеленым яблоком</p>
+                                <div class="content__bottom d-flex align-items-center justify-content-between">
                                     <h6 class="product__price">620 ₽</h6>
                                     <button class="btn" data-bs-toggle="modal" data-bs-target="#cardModal">
                                         В корзину
@@ -115,13 +187,32 @@
                         <div class="swiper-slide">
                             <img src="./images/icons/menu__img-one.svg" alt="menu__img-one">
                             <div class="slider__content">
-                                <div class="content__top d-flex align-items-center">
-                                    <h5 class="content__top-title">Ягненок</h5>
+                                <div class="content__top d-flex align-items-center justify-content-between">
+                                    <h5 class="content__top-title">Индейка</h5>
                                     <p class="product__weight">Вес: 225 г</p>
                                 </div>
                                 <p class="content__text">Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком</p>
-                                <div class="content__bottom d-flex align-items-center">
-                                    <h6 class="product__price">620 ₽</h6>
+                                <div class="content__bottom d-flex align-items-center justify-content-around">
+                                    <button class="btn" data-bs-toggle="modal" data-bs-target="#cardModal">
+                                        <img class="plus__icon" src="./images/icons/plus__icon.png" alt="plus__icon">
+                                    </button>
+                                    <h6 class="product__price">450 ₽</h6>
+                                    <button class="btn" data-bs-toggle="modal" data-bs-target="#cardModal">
+                                        <img class="plus__icon" src="./images/icons/plus__icon.png" alt="plus__icon">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/imgs/menu__img-three.png" alt="menu__img-one">
+                            <div class="slider__content">
+                                <div class="content__top d-flex align-items-center justify-content-between">
+                                    <h5 class="content__top-title">Гусь</h5>
+                                    <p class="product__weight">Вес: 225 г</p>
+                                </div>
+                                <p class="content__text text">Фаршированный яблоками</p>
+                                <div class="content__bottom d-flex align-items-center justify-content-between">
+                                    <h6 class="product__price">7 900 ₽</h6>
                                     <button class="btn" data-bs-toggle="modal" data-bs-target="#cardModal">
                                         В корзину
                                         <img src="./images/icons/card-icon.svg" alt="card-icon">
@@ -130,66 +221,15 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./images/icons/menu__img-one.svg" alt="menu__img-one">
+                            <img src="./images/imgs/menu__img-two.png" alt="menu__img-one">
                             <div class="slider__content">
-                                <div class="content__top d-flex align-items-center">
-                                    <h5 class="content__top-title">Ягненок</h5>
+                                <div class="content__top d-flex align-items-center justify-content-between">
+                                    <h5 class="content__top-title">Утка</h5>
                                     <p class="product__weight">Вес: 225 г</p>
                                 </div>
-                                <p class="content__text">Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком</p>
-                                <div class="content__bottom d-flex align-items-center">
-                                    <h6 class="product__price">620 ₽</h6>
-                                    <button class="btn" data-bs-toggle="modal" data-bs-target="#cardModal">
-                                        В корзину
-                                        <img src="./images/icons/card-icon.svg" alt="card-icon">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./images/icons/menu__img-one.svg" alt="menu__img-one">
-                            <div class="slider__content">
-                                <div class="content__top d-flex align-items-center">
-                                    <h5 class="content__top-title">Ягненок</h5>
-                                    <p class="product__weight">Вес: 225 г</p>
-                                </div>
-                                <p class="content__text">Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком</p>
-                                <div class="content__bottom d-flex align-items-center">
-                                    <h6 class="product__price">620 ₽</h6>
-                                    <button class="btn" data-bs-toggle="modal" data-bs-target="#cardModal">
-                                        В корзину
-                                        <img src="./images/icons/card-icon.svg" alt="card-icon">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./images/icons/menu__img-one.svg" alt="menu__img-one">
-                            <div class="slider__content">
-                                <div class="content__top d-flex align-items-center">
-                                    <h5 class="content__top-title">Ягненок</h5>
-                                    <p class="product__weight">Вес: 225 г</p>
-                                </div>
-                                <p class="content__text">Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком</p>
-                                <div class="content__bottom d-flex align-items-center">
-                                    <h6 class="product__price">620 ₽</h6>
-                                    <button class="btn" data-bs-toggle="modal" data-bs-target="#cardModal">
-                                        В корзину
-                                        <img src="./images/icons/card-icon.svg" alt="card-icon">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./images/icons/menu__img-one.svg" alt="menu__img-one">
-                            <div class="slider__content">
-                                <div class="content__top d-flex align-items-center">
-                                    <h5 class="content__top-title">Ягненок</h5>
-                                    <p class="product__weight">Вес: 225 г</p>
-                                </div>
-                                <p class="content__text">Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком</p>
-                                <div class="content__bottom d-flex align-items-center">
-                                    <h6 class="product__price">620 ₽</h6>
+                                <p class="content__text text">Фаршированная рисом, курагой и айвой</p>
+                                <div class="content__bottom d-flex align-items-center justify-content-between">
+                                    <h6 class="product__price">3 230 ₽</h6>
                                     <button class="btn" data-bs-toggle="modal" data-bs-target="#cardModal">
                                         В корзину
                                         <img src="./images/icons/card-icon.svg" alt="card-icon">
@@ -199,6 +239,8 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </section>
         </section>
 

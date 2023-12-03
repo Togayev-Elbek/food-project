@@ -89,7 +89,7 @@ body {
   color: #fff;
   font-size: 14px;
   font-weight: 600;
-  padding: 14px 13px 14px 24px;
+  padding: 14px 14px 14px 24px;
   background: linear-gradient(115deg, #618967 5.11%, #72A479 94%);
   border: none;
   border-radius: 10px;
@@ -130,9 +130,8 @@ body {
 .modal__btn {
   border-radius: 10px;
   background: linear-gradient(115deg, #618967 5.11%, #72A479);
-  width: 188px;
   margin: 43px auto 63px auto;
-  padding: 17px 0;
+  padding: 17px 34px;
 }
 .modal__btn .btn__title {
   color: #fff;
@@ -152,6 +151,66 @@ body {
   display: inline-block;
   margin-top: 20px;
   transform: rotate(-8.022deg) skewX(-12.022deg);
+}
+
+.cold__snacks .snacks__title {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 50px 0 50px 114px;
+  position: relative;
+}
+.cold__snacks .snacks__title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  left: -19px;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 33px;
+  background: #618967;
+}
+.cold__snacks .swiper-wrapper {
+  gap: 16px;
+}
+.cold__snacks .swiper-wrapper .swiper-slide {
+  width: 325px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.cold__snacks .swiper-wrapper .swiper-slide .slider__content {
+  padding: 20px;
+  background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+}
+.cold__snacks .swiper-wrapper .swiper-slide .slider__content .content__top-title {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+}
+.cold__snacks .swiper-wrapper .swiper-slide .slider__content .product__weight {
+  color: #fff;
+  font-size: 12px;
+}
+.cold__snacks .swiper-wrapper .swiper-slide .slider__content .content__text {
+  color: #CFCFCF;
+  font-size: 13px;
+  line-height: 17px;
+  padding: 5px 0 15px 0;
+}
+.cold__snacks .swiper-wrapper .swiper-slide .slider__content .text {
+  padding-bottom: 32px;
+}
+.cold__snacks .swiper-wrapper .swiper-slide .slider__content .product__price {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+.cold__snacks .swiper-wrapper .swiper-slide .slider__content .plus__icon {
+  color: #fff;
+  text-align: center;
 }
 
 .header {
@@ -177,12 +236,12 @@ body {
   border-radius: 10px;
 }
 .header__search::-moz-placeholder {
-  color: #CFCFCF;
   width: 100%;
+  color: #CFCFCF;
 }
 .header__search::placeholder {
-  color: #CFCFCF;
   width: 100%;
+  color: #CFCFCF;
 }
 .header__location-icon {
   top: 50%;
@@ -243,7 +302,7 @@ body {
 }
 
 .tabs {
-  padding: 29px 13px;
+  padding: 29px 13px 0 13px;
 }
 .tabs .nav {
   gap: 55px;
@@ -256,8 +315,8 @@ body {
 }
 .tabs .nav-item:hover {
   color: #fff;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
   padding-bottom: 27px;
   border-bottom: 2px solid #618967;
 }
